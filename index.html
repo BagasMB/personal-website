@@ -11,7 +11,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet" />
     <link href="dist/output.css" rel="stylesheet" />
+    <style>
+      .font-gabarito-700 {
+        font-family: "Gabarito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .font-gabarito-400 {
+        font-family: "Gabarito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+    </style>
   </head>
   <body class="bg-sky-50 dark:bg-dark">
     <section id="home" class="pb-36 pt-4 lg:pt-28 dark:bg-dark">
@@ -24,14 +41,14 @@
           </div>
 
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Hallo👋, I'm</h1>
-            <span id="multitext" class="text-4xl font-bold text-dark dark:text-white lg:text-3xl"></span>
-            <h2 class="mb-5 font-medium text-secondary dark:text-white lg:text-xl">Seorang Siswa Di SMKN 2 Karanganyar</h2>
-            <p class="mb-4 font-medium leading-relaxed text-secondary dark:text-white lg:mt-4">
+            <h1 class="text-base font-semibold text-primary md:text-xl font-gabarito-700">Hallo👋, I'm</h1>
+            <span id="multitext" class="text-4xl font-bold text-dark dark:text-white lg:text-3xl font-gabarito-700"></span>
+            <h2 class="mb-5 font-medium text-secondary dark:text-white lg:text-xl font-gabarito-700">Seorang Siswa Di SMKN 2 Karanganyar</h2>
+            <p class="mb-4 font-medium leading-relaxed text-secondary dark:text-white lg:mt-4 font-gabarito-400">
               Saya Seorang Siswa Di Sekolah menengah kejuruan, jurusan Rekayasa Perangkat Lunak. Saat ini sedang mempelajari Codeigniter 3, Tailwind Css, API, dan Pengembangan Android. Saya juga aktif di organisasi PMR dan forum
               PMR(Forpis).
             </p>
-            <p class="mb-8 font-medium leading-relaxed text-secondary dark:text-white">Belajar web programming itu mudah bukan, <span class="font-semibold text-dark dark:text-white"> Bukan!</span></p>
+            <p class="mb-8 font-medium leading-relaxed text-secondary dark:text-white font-gabarito-400">Belajar web programming itu mudah bukan, <span class="font-semibold text-dark dark:text-white"> Bukan!</span></p>
             <div class="flex flex-wrap">
               <a href="https://instagram.com/bgsmhrdkabdhrto_" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:bg-dark hover:text-white dark:text-white">
                 <!-- Bila ingin berwarna -->
