@@ -53,12 +53,12 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
   darkToggle.checked = false;
 }
 
-var splide = new Splide(".splide", {
-  type: "loop",
-  perPage: 3,
-  perMove: 1,
-  focus: "center",
-  autoplay: true,
-});
+// var splide = new Splide(".splide", {
+//   type: "loop",
+//   perPage: 3,
+//   perMove: 1,
+//   focus: "center",
+//   autoplay: true,
+// });
 
-splide.mount();
+// splide.mount();
