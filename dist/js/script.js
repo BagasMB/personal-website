@@ -53,6 +53,13 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
   darkToggle.checked = false;
 }
 
+var typingEffect = new Typed("#multitext", {
+  strings: ["Bagas Mahardika Budiharto.", "Web Developer."],
+  loop: true,
+  typeSpeed: 90,
+  backSpeed: 50,
+  backDelay: 1000,
+});
 // var splide = new Splide(".splide", {
 //   type: "loop",
 //   perPage: 3,
