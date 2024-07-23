@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#about2 {
+  padding-top: 8rem;
+}
+
 #project2 {
   padding-top: 7rem;
 }
