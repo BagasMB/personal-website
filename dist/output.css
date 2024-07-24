@@ -1255,12 +1255,30 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+#about2 {
+  padding-top: 5rem;
+}
+
 #project2 {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 #equipments2 {
-  padding-top: 7rem;
+  padding-top: 5rem;
+}
+
+@media (min-width: 1024px) {
+  #about2 {
+    padding-top: 8rem;
+  }
+
+  #project2 {
+    padding-top: 8rem;
+  }
+
+  #equipments2 {
+    padding-top: 8rem;
+  }
 }
 
 .judul {
@@ -1356,6 +1374,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:border-blue-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+}
+
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
@@ -1364,6 +1387,16 @@ video {
 .hover\:bg-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover {
@@ -1383,6 +1416,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-red-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-40:hover {

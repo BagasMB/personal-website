@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+#about2 {
+  padding-top: 5rem;
+}
 
 #project2 {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 #equipments2 {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
+
+@media (min-width: 1024px) {
+  #about2 {
+    padding-top: 8rem;
+  }
+  #project2 {
+    padding-top: 8rem;
+  }
+  #equipments2 {
+    padding-top: 8rem;
+  }
+}
+
 
 .judul {
   font-family: "Gabarito", sans-serif;
