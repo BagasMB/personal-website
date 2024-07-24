@@ -33,25 +33,47 @@ window.addEventListener("click", function (e) {
 });
 
 // Dark Mode Toggle
-const darkToggle = document.querySelector("#dark-toggle");
-const html = document.querySelector("html");
+const sunIcon = document.querySelector("#sun");
+const moonIcon = document.querySelector("#moon");
 
-darkToggle.addEventListener("click", function () {
-  if (darkToggle.checked) {
-    html.classList.add("dark");
-    localStorage.theme = "dark";
-  } else {
-    html.classList.remove("dark");
-    localStorage.theme = "light";
+const userTheme = localStorage.getItem("theme");
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const iconToggle = () => {
+  moonIcon.classList.toggle("hidden");
+  sunIcon.classList.toggle("hidden");
+};
+
+// Initial Check
+const themeCheck = () => {
+  if (userTheme === "dark" || (!userTheme && systemTheme)) {
+    document.documentElement.classList.add("dark");
+    sunIcon.classList.add("hidden");
+    moonIcon.classList.remove("hidden");
+    return;
   }
-});
+  sunIcon.classList.remove("hidden");
+  moonIcon.classList.add("hidden");
+};
 
-// Pindahkan Posisi Toggle Sesuai Mode
-if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-  darkToggle.checked = true;
-} else {
-  darkToggle.checked = false;
-}
+// Manual Switch
+const themeSwitch = () => {
+  if (document.documentElement.classList.contains("dark")) {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+  iconToggle();
+};
+
+// Event listeners for icons
+sunIcon.addEventListener("click", themeSwitch);
+moonIcon.addEventListener("click", themeSwitch);
+
+// Initial theme check
+themeCheck();
 
 var typingEffect = new Typed("#multitext", {
   strings: ["Bagas Mahardika Budiharto.", "Web Developer."],

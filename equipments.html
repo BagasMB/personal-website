@@ -22,6 +22,7 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
 
   <body class="bg-gray-100 dark:bg-slate-800">
@@ -49,20 +50,24 @@
               <li class="group">
                 <a href="project.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Project</a>
               </li>
-              <li class="group mb-4 lg:mb-0">
+              <li class="group">
                 <a href="equipments.html" class="mx-8 flex py-2 text-base text-primary group-hover:text-primary">Equipments</a>
               </li>
-              <li class="mx-2 flex items-center pl-6 lg:mt-0">
-                <div class="flex">
-                  <span class="mr-2 text-sm text-slate-600 dark:text-white">Light</span>
-                  <input type="checkbox" class="hidden switch" id="dark-toggle" />
-                  <label for="dark-toggle" class="">
-                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
-                    </div>
-                  </label>
-                  <span class="ml-2 text-sm text-slate-600 dark:text-white">Dark</span>
-                </div>
+              <li class="group">
+                <button
+                  id="sun"
+                  type="button"
+                  class="text-white bg-blue-700 hidden hover:bg-blue-800 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <i class="bx bxs-sun"></i>
+                </button>
+                <button
+                  id="moon"
+                  type="button"
+                  class="text-white bg-blue-700 hidden hover:bg-blue-800 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <i class="bx bxs-moon"></i>
+                </button>
               </li>
               <!-- <button
                 type="button"
