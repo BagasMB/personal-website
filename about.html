@@ -54,27 +54,17 @@
                 <a href="equipments.html" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Equipments</a>
               </li>
               <li class="group">
-                <button
-                  id="sun"
-                  type="button"
-                  class="text-white bg-blue-700 hidden hover:bg-blue-800 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
+                <button id="sun" type="button" class="text-dark hidden hover:bg-gray-200 ring-slate-600 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-slate-400 rounded-lg text-xl px-4 py-2 text-center">
                   <i class="bx bxs-sun"></i>
                 </button>
                 <button
                   id="moon"
                   type="button"
-                  class="text-white bg-blue-700 hidden hover:bg-blue-800 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="text-white hidden hover:bg-gray-200 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-slate-400 font-medium rounded-lg text-xl px-4 py-2 text-center hover:text-dark"
                 >
                   <i class="bx bxs-moon"></i>
                 </button>
               </li>
-              <!-- <button
-                type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 mr-4 ml-6 mt-4 lg:mt-0 focus:outline-none subjudul focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                My Resume
-              </button> -->
             </ul>
           </nav>
         </div>
@@ -126,7 +116,6 @@
             </div>
             <div class="mb-10 w-full px-4 lg:w-1/2">
               <h3 class="mb-2 text-2xl font-semibold judul text-dark dark:text-white lg:pt-10">Experience</h3>
-              <!-- mb-2 text-2xl font-bold lg:text-3xl judul dark:text-white -->
               <ul class="list-disc list-inside subjudul px-4 text-justify text-secondary dark:text-slate-300">
                 <li>Tim IT/Dokumentasi PMR Wira SMKN 2 Karanganyar 2023 - 2024</li>
                 <li>Tim IT/Dokumentasi Forpis 2023 - 2024</li>
@@ -139,18 +128,16 @@
     <!-- About End -->
 
     <section id="foto" class="pb-8">
-      <div class="container">
-        <div class="mx-auto max-w-4xl px-4">
-          <div class="w-full mb-4">
-            <h4 class="text-2xl font-bold lg:text-3xl judul dark:text-white">Gallery 📸</h4>
-            <!-- <h5 class="font-bold text-secondary subjudul dark:text-white">A little about myself.</h5> -->
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2">
-            <img class="mb-4" width="900" src="dist/img/gallery/IMG_0643.jpg" />
-            <img class="mb-4" width="900" src="dist/img/gallery/IMG_0713.JPG" />
-            <img class="mb-4" width="900" src="dist/img/gallery/IMG_9702.JPG" />
-            <!-- <img class="mb-4" width="900" src="dist/img/gallery/IMG_0731.JPG" /> -->
-          </div>
+      <div class="container mx-auto max-w-4xl px-4">
+        <div class="w-full mb-4">
+          <h4 class="text-2xl font-bold lg:text-3xl judul dark:text-white">Gallery 📸</h4>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="dist/img/gallery/IMG_0643.jpg" alt="Gallery Image 1" />
+          <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="dist/img/gallery/IMG_0713.JPG" alt="Gallery Image 2" />
+          <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="dist/img/gallery/IMG_9702.JPG" alt="Gallery Image 3" />
+          <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="dist/img/gallery/IMG_8242.JPG" alt="Gallery Image 4" />
+          <img class="w-full h-auto object-cover rounded-lg shadow-lg" src="dist/img/gallery/IMG-20240808-WA0020.jpg" alt="Gallery Image 5" />
         </div>
       </div>
     </section>
@@ -175,7 +162,7 @@
       </div>
     </footer>
 
-    <a href="#" class="fixed bottom-5 right-5 z-[9999] h-11 w-11 items-center justify-center rounded-full bg-primary p-2 hover:opacity-40" id="to-top">
+    <a href="#" class="fixed bottom-5 right-5 z-[9999] h-11 w-11 flex items-center justify-center rounded-full bg-primary p-2 hover:opacity-40" id="to-top">
       <i class="fa-solid fa-arrow-up text-white p-2"></i>
     </a>
 
