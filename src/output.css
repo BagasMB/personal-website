@@ -726,6 +726,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -968,6 +972,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -1202,6 +1211,11 @@ video {
 
 .shadow-blue-500\/20 {
   --tw-shadow-color: rgb(59 130 246 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-800\/20 {
+  --tw-shadow-color: rgb(31 41 55 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1480,6 +1494,11 @@ video {
 
 .hover\:shadow-blue-500\/40:hover {
   --tw-shadow-color: rgb(59 130 246 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-gray-800\/40:hover {
+  --tw-shadow-color: rgb(31 41 55 / 0.4);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
